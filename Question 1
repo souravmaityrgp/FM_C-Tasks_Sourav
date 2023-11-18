@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main()
+{
+    //to print the output using printf
+    printf("*\n**\n***\n****\n*****\n");
+    return 0;
+}
