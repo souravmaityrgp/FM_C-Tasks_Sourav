@@ -1,0 +1,24 @@
+#include <studio.h>
+#include <string.h>
+
+int main() {
+    char str[100];
+    int vowelsCount = 0;
+
+    // Input from the user
+    printf("Enter a string: ");
+    gets(str);
+
+    // Count the number of vowels in the string
+    for (int i = 0; i < strlen(str); i++) {
+        // Convert the character to lowercase for case-insensitive comparison
+        char currentChar = tolower(str[i]);  
+
+        // Check if the current character is a vowel
+        if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o' || currentChar == 'u') {
+            vowelsCount++;
+        }
+    }
+
+    // Output the result
+    printf("Number of vowels in the string: %d\n", vowelsCo
