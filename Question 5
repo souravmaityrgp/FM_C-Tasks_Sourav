@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+    char s[50];
+    int i, j ,n,flag=1;
+
+    //to initialise the string
+    printf("Enter the string:");
+    gets(s);
+
+    //to reverse the string
+    for (i=0;s[i]!='\0';i++);
+        n=i;
+
+    //if the reverse is same as the initial then it is flagged.
+    for (i=0;i<n/2;i++)
+        {
+            if (s[i]!=s[n-i-1])
+            {
+            flag=0;
+            break;
+            }
+        }
+
+    if (flag==1)
+    printf("%s is a palindrome",s);
+    else
+    printf("%s is not a palindrome",s);
+}
